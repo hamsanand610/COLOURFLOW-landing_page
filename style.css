@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #3498db;   /* Vibrant Blue */
+    --secondary-color: #2ecc71; /* Green */
+    --accent-color: #f39c12;    /* Orange */
+    --dark-color: #333;
+    --light-color: #f8f9fa;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+/* --- Button Styles --- */
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn-light {
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-light:hover {
+    transform: translateY(-3px);
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+/* --- Header & Navbar --- */
+.navbar-brand {
+    font-size: 1.5rem;
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    font-weight: 600;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background-color: #eaf5ff; /* Light blue background */
+    padding: 100px 0;
+}
+
+.hero h1 {
+    color: var(--dark-color);
+}
+
+.hero .lead {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- Features Section --- */
+#features {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.feature-icon-blue { background-color: var(--primary-color); }
+.feature-icon-green { background-color: var(--secondary-color); }
+.feature-icon-orange { background-color: var(--accent-color); }
+
+.feature-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* --- Testimonials Section ---s */
+#testimonials .carousel-item {
+    padding: 20px 40px;
+}
+
+/* --- CTA Section --- */
+.cta {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+}
+
+/* --- Footer --- */
+footer {
+    background: var(--light-color);
+    border-top: 1px solid #e7e7e7;
+}
